@@ -18,7 +18,10 @@ const paymentRoutes = require('./routes/payment-intents');
 // General config
 app.use(express.json());
 app.use(express.static('build'));
-app.use(cors());
+app.use(cors({
+    origin: 'https://infinite-bliss-client.onrender.com',
+    credentials: true
+}));
 
 // Routing config
 app.use('/apparel', apparelRoutes);
