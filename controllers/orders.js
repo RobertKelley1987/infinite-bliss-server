@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const ExpressError = require('../server/util/express-error');
+const ExpressError = require('../util/express-error');
 const { v4: uuid } = require('uuid');
 
 // Create a new order and save to db for future processing and shipping

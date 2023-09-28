@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router({ mergeParams: true });
-const catchAsync = require('../server/util/catch-async')
+const catchAsync = require('../util/catch-async')
 const accessories = require('../controllers/accessories');
 
 router.get('/', catchAsync(accessories.findAll));

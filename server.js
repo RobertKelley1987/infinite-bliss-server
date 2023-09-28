@@ -28,9 +28,6 @@ app.use('/artists', artistRoutes);
 app.use('/orders', orderRoutes);
 app.use('/payment-intents', paymentRoutes);
 
-// Send react build on get request
-app.get('/*', (req, res) => res.sendFile(path.join(__dirname, 'build', 'index.html')));
-
 // Error handling
 app.use((error, req, res, next) => {
     console.log(error);

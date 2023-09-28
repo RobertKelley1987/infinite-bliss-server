@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const ExpressError = require('../server/util/express-error');
+const ExpressError = require('../util/express-error');
 
 const ALL_ARTISTS = [
     'agriculture', 'bell-witch', 'blood-incantation', 'the-body', 'chat-pile', 'cloud-rat', 

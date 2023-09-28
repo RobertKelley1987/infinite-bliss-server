@@ -1,5 +1,5 @@
 const fs = require('fs').promises;
-const ExpressError = require('../server/util/express-error');
+const ExpressError = require('../util/express-error');
 
 // All possible product types in the apparel category
 const PRODUCT_TYPES = ['t-shirts', 'longsleeves', 'hoodies'];
